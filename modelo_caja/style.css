@@ -1,0 +1,13 @@
+/* codigo para resetear estilos en tu web de forma universal */
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid cornflowerblue;
+    padding: 25px 20px;
+}
