@@ -11,3 +11,33 @@ p {
     color: rosybrown;
     font-size: 15px;
 }
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: cornflowerblue;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: chartreuse;
+}
+
+.main-nav__item a:active {
+    color: gold;
+}
+
+.main-nav__item a::after {
+    content: " | ";
+}
