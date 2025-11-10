@@ -1,0 +1,29 @@
+/* Combinadores para especificidad hijo, cercano, pariente, general */
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.plus h2 + p {
+    padding-top: 20px;
+    color: red;
+    font-style:italic;
+}
+
+.son section > p, div > p{
+    padding-left: 10px;
+    color: blue;
+    font: bold;
+}
+
+.parent h2 ~ p {
+    padding-left: 30px;
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.next div p {
+    padding-left: 50px;
+    color: brown;
+}

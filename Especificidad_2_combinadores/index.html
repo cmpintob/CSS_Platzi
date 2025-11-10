@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Sitio web en donde vemos los combinadores como parte de la especificidad de la web">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="/2_css/Especificidad_2_combinadores/style.css">
+</head>
+<body>
+    <ol>
+        <li class="plus">
+            <h1>ejemplo basico con "+", elementos cerca (seguido o despues) de...</h1>
+
+            <h2>Elemento de referencia</h2>
+            <p>Elemento a modificar (valido)</p>
+            <p>Elemento a modificar (invalido)</p>
+            <h2>Elemento de referencia</h2>
+            <p>Elemento a modificar (valido)</p>
+            <h2>Elemento de referencia</h2>
+            <h3>Elemento obstaculo (rompe la relacion)</h3>
+            <p>Elemento a modificar (invalido)</p>
+        </li>
+        <li class="son">
+            <h1>ejemplo basico con ">", elementos hijos (contenidos dentro) de...</h1>
+
+            <section>
+                <p>elemento valido</p>
+            </section>            
+            <p>elemento invalido</p>
+            <div>
+                <p>elemento valido</p>
+                <p>elemento valido</p>
+            </div>
+        </li>
+        <li class="parent">
+            <h1>ejemplo basico con "~", elementos parientes (multiples elementos seguidos o despues) de...</h1>
+
+            <h2>Elemento de referencia</h2>
+            <p>Elemento a modificar (valido)</p>
+            <p>Elemento a modificar (valido)</p>
+            <h2>Elemento de referencia (se ignora)</h2>
+            <p>Elemento a modificar (valido)</p>
+            <h2>Elemento de referencia (se ignora)</h2>
+            <h3>Elemento obstaculo (se ignora)</h3>
+            <p>Elemento a modificar (valido)</p>
+        </li>
+        <li class="next">
+            <h1>ejemplo basico con " ", elementos generales asociados a...</h1>
+
+            <section>
+                <p>elemento neutral</p>
+            </section>            
+            <p>elemento neutral</p>
+            <div>
+                <p>elemento objetivo</p>
+                <p>elemento objetivo</p>
+            </div>
+        </li>
+    </ol>
+</body>
+</html>
