@@ -28,22 +28,34 @@ html {
     background-color: red;
 }
 
+/* Reto del curso */
 .homework {
-    /* display: inline-block; */    
-    font-size: 2rem;
-    color: black; 
-    background-color: gainsboro;
-    position: relative;    
-    width: 300px;
-    height: 180px;   
+    display: inline-block;  
+    font-size: 1.6rem;
+    color: black;     
+}
+
+.homework_box {
+    display: inline-block;
+}
+
+#five {
+    background-color: red; 
+    position: absolute;    
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
     margin: 0 auto;
 }
 
 #six {
-    background-color: red; 
-    width: 70px;
-    height: 45px;
-    margin: 0 auto;
+    background-color: gainsboro;       
+    border: 1px black double;
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
 }
+
+
 
 
