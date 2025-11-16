@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    border: .3rem black solid;
+    display: flex;
+    /* row por defecto */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */   
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;  
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.6rem;
+}
+
+.box1 {
+    background-color: aqua;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: violet;
+}
+
+.box4 {
+    background-color: palegreen;
+}
+
+.box5 {
+    background-color: palevioletred;
+}
+
+.box6 {
+    background-color: greenyellow;
+}
