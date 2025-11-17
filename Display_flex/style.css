@@ -18,17 +18,28 @@ html {
     /* flex-direction: column-reverse; */   
     /* flex-wrap: wrap; */
     flex-wrap: wrap-reverse;
-    justify-content: space-evenly;  
+    /* justify-content: center; Flex-start y end se pueden usar para ponerse al inicio o final o izquiera o derecha según corresponda */      
+    justify-content: space-evenly; 
+    /* posicionamiento vertical */ 
+    /* align-items: baseline; Los contenedores se adaptan al tamaño del contenido */
+    /* align-items: stretch; De forma horizontal, el contenedor se extiende para ocupar todo el contenedor padre */
+    /* align-items: center; de forma horizontal, centra el contendio, puede usarse flex-start y end para alinear items arriba o abajo */    
 }
+
+/* 1 rem para width height = 10px */
 
 .box {
     width: 10rem;
     height: 10rem;
     font-size: 1.6rem;
+    /* flex-basis: 10rem; reemplaza al width o height para crear una regla de tamaño minimo al cambiar dimensiones de la ventana del navegador, al cerrarse y alcanzar el tamaño especificado, el item se movera a un nuevo espacio ocupandolo gracias a grow (linea de codigo siguiente) desplazando finalmente todos los elementos al encontrar su limite y extendiendo los mismos al estar todos en una misma clase */
+    /* flex-grow: 1; */
 }
 
 .box1 {
     background-color: aqua;
+    /* order: 1; se pueden ordenar los items dentro de un contenedor, quienes no posean orden se alinean al inicio (izquierda) */
+    /* flex-grow: 1; propiedad que permite ocupar el espacio vacio de un contenedor por parte de este item */
 }
 
 .box2 {
