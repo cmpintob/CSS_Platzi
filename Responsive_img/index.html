@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Sitio web para explicar y ejemplificar el correcto uso de imágenes">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="picture_container">
+            <picture>
+                <source media="(min-width:1200px)" srcset="images/Large.jpg">
+                <source media="(min-width:800px)" srcset="images/Medium.jpg">
+                <img src="images/Small.jpg" alt="imagen de una pequeña princesa">
+            </picture>            
+        </div>        
+    </main>
+</body>
+</html>
